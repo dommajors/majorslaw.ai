@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLG — {TITLE}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A101E; --panel:#101A2E; --panel2:#0D1526; --line:#1D2B45;
+    --ink:#E4ECF7; --muted:#7C8DB0; --dim:#4A5A7A;
+    --core:#6FD3E7; --vault:#B98BF0; --tower:#F0B15C; --new:#4ADE9C; --gate:#F07070;
+    --ring1:#5BA8F5; --ring2:#4ADE9C;
+    --vault-soft:rgba(185,139,240,.10); --tower-soft:rgba(240,177,92,.10); --new-soft:rgba(74,222,156,.08);
+    --interim:#F5A623; --interim-soft:rgba(245,166,35,.08); --bridge:#8FB0CC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(1200px 600px at 50% -10%, rgba(111,211,231,.07), transparent 60%), var(--bg);
+    color:var(--ink); font-family:'IBM Plex Sans',system-ui,sans-serif; padding:30px 34px 40px; max-width:1560px; margin:0 auto;}
+  .icon{width:18px;height:18px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+  header{margin-bottom:20px}
+  .brand{font-family:'Chakra Petch';font-weight:700;font-size:23px;letter-spacing:.14em}
+  .brand em{color:var(--core);font-style:normal}
+  .sub{color:var(--muted);font-size:12.5px;letter-spacing:.1em;margin-top:5px}
+  .legend{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);letter-spacing:.03em}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .sw{width:11px;height:11px;border-radius:3px;flex-shrink:0}
+
+  .zone{border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:16px;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));}
+  .zone-title{font-family:'Chakra Petch';font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:6px;display:flex;align-items:center;gap:9px}
+  .zone-title .icon{color:var(--core)}
+  .zone-note{font-size:11px;color:var(--dim);margin-bottom:14px;line-height:1.6;letter-spacing:.02em}
+
+  /* changed-since banner */
+  .delta{border:1px solid rgba(74,222,156,.35);background:rgba(74,222,156,.06);border-radius:14px;padding:14px 18px;margin-bottom:16px}
+  .delta .dt{font-family:'Chakra Petch';font-size:11px;letter-spacing:.18em;color:var(--new);margin-bottom:9px}
+  .delta ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px}
+  .delta li{font-size:11.5px;color:var(--muted);line-height:1.5;flex:1 1 calc(33% - 22px);min-width:250px;padding-left:14px;position:relative}
+  .delta li:before{content:"▸";position:absolute;left:0;color:var(--new)}
+  .delta li b{color:var(--ink);font-weight:500}
+
+  /* physical layer */
+  .rack{display:flex;flex-wrap:wrap;gap:12px}
+  .device{flex:1 1 calc(16.6% - 10px);min-width:158px;border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(255,255,255,.02);text-align:center}
+  .device .icon{color:var(--core);width:22px;height:22px;margin:0 auto 8px}
+  .device .name{font-family:'Chakra Petch';font-size:12px;font-weight:600}
+  .device .role{font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.45}
+  .device .spec{font-size:9.5px;color:var(--dim);margin-top:6px;font-family:'IBM Plex Mono';line-height:1.4}
+  .device.unknown{border:1px dashed rgba(240,112,112,.5);background:rgba(240,112,112,.05)}
+  .device.unknown .icon,.device.unknown .name{color:var(--gate)}
+  .device.pending{border:1px dashed rgba(245,166,35,.5);background:var(--interim-soft)}
+  .device.pending .icon,.device.pending .name{color:var(--interim)}
+
+  .vlan-wrap{display:flex;gap:14px;margin-top:14px;align-items:stretch;flex-wrap:wrap}
+  .vlan{flex:1 1 300px;border:1px dashed var(--line);border-radius:10px;padding:10px 12px}
+  .vlan .vt{font-family:'Chakra Petch';font-size:10.5px;letter-spacing:.1em;color:var(--core);margin-bottom:5px}
+  .vlan .vd{font-size:11px;color:var(--muted);line-height:1.55}
+  .vlan.blocked{border-color:rgba(240,112,112,.35)}
+  .vlan.blocked .vt{color:var(--gate)}
+  .vlan.good{border-color:rgba(74,222,156,.35)}
+  .vlan.good .vt{color:var(--new)}
+
+  /* cloud layer */
+  .cloudgrid{display:flex;flex-wrap:wrap;gap:12px}
+  .cloud{flex:1 1 calc(25% - 9px);min-width:228px;border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:rgba(255,255,255,.02)}
+  .cloud .ct{display:flex;align-items:center;gap:7px;font-family:'Chakra Petch';font-size:12px;font-weight:600}
+  .cloud .ct .icon{color:var(--core);width:15px;height:15px}
+  .cloud .cd{font-size:10.5px;color:var(--muted);margin-top:6px;line-height:1.55}
+  .cloud.spine{border-color:rgba(111,211,231,.4);background:rgba(111,211,231,.05)}
+  .cloud.interim{border:1px dashed rgba(245,166,35,.45);background:var(--interim-soft);opacity:.94}
+  .cloud.interim .ct,.cloud.interim .ct .icon{color:var(--interim)}
+  .cloud.flag{border:1px solid rgba(240,112,112,.45);background:rgba(240,112,112,.05)}
+  .cloud.flag .ct,.cloud.flag .ct .icon{color:var(--gate)}
+  .cloud.newx{border:1px dashed rgba(74,222,156,.45);background:var(--new-soft)}
+  .cloud.newx .ct,.cloud.newx .ct .icon{color:var(--new)}
+
+  /* rings */
+  .rings{display:flex;gap:14px;flex-wrap:wrap}
+  .ring{flex:1 1 330px;min-width:310px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:rgba(255,255,255,.015)}
+  .ring.r1{border-color:rgba(91,168,245,.35)}
+  .ring.r2{border-color:rgba(74,222,156,.32)}
+  .ring.r3{border-color:rgba(111,211,231,.32)}
+  .ring-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+  .ring-head .rn{font-family:'Chakra Petch';font-size:13.5px;font-weight:700;letter-spacing:.06em}
+  .ring.r1 .rn{color:var(--ring1)} .ring.r2 .rn{color:var(--ring2)} .ring.r3 .rn{color:var(--core)}
+  .ring-head .rc{font-family:'IBM Plex Mono';font-size:10px;color:var(--dim)}
+  .ring-sub{font-size:10.5px;color:var(--muted);line-height:1.55;margin-bottom:10px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+  .agent{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(29,43,69,.5)}
+  .agent:last-child{border-bottom:none}
+  .agent .an{font-size:11.5px}
+  .agent .an span{color:var(--dim);font-family:'IBM Plex Mono';font-size:9.5px;margin-right:5px}
+  .agent .ax{font-size:9px;font-family:'Chakra Petch';letter-spacing:.06em;padding:2px 6px;border-radius:999px;flex-shrink:0;white-space:nowrap;border:1px solid}
+  .t0{color:var(--dim);border-color:rgba(74,90,122,.5)}
+  .t1{color:var(--vault);border-color:rgba(185,139,240,.45);background:var(--vault-soft)}
+  .t2{color:var(--core);border-color:rgba(111,211,231,.35)}
+  .t3{color:var(--muted);border-color:rgba(124,141,176,.35)}
+  .tn{color:var(--gate);border-color:rgba(240,112,112,.45);background:rgba(240,112,112,.07)}
+  .subhead{font-family:'Chakra Petch';font-size:9.5px;letter-spacing:.16em;color:var(--dim);margin:11px 0 3px;text-transform:uppercase}
+  .agent.dim{opacity:.55}
+  .agent.dim .an{text-decoration:line-through;text-decoration-color:var(--dim)}
+
+  /* valve */
+  .valve{margin-top:14px;border:1px solid rgba(111,211,231,.35);border-radius:12px;padding:12px 16px;background:rgba(111,211,231,.05);
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .valve .icon{width:24px;height:24px;color:var(--core)}
+  .valve .vt{font-family:'Chakra Petch';font-size:12.5px;font-weight:700;color:var(--core);letter-spacing:.06em}
+  .valve .vd{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.55}
+
+  /* gates */
+  .gate5{border:1px solid rgba(240,112,112,.45);border-radius:12px;padding:14px 18px;
+    background:rgba(240,112,112,.06);display:flex;align-items:center;gap:14px}
+  .gate5 .icon{width:26px;height:26px;color:var(--gate);flex-shrink:0}
+  .gate5 .gt{font-family:'Chakra Petch';font-size:13px;font-weight:700;color:var(--gate)}
+  .gate5 .gd{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.55}
+
+  /* failure table */
+  table{width:100%;border-collapse:collapse;font-size:11.5px}
+  th{font-family:'Chakra Petch';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+    text-align:left;padding:0 10px 8px;border-bottom:1px solid var(--line);font-weight:600}
+  td{padding:9px 10px;border-bottom:1px solid rgba(29,43,69,.55);color:var(--muted);line-height:1.5;vertical-align:top}
+  td b{color:var(--ink);font-weight:600}
+  tr:last-child td{border-bottom:none}
+  .rk{font-family:'Chakra Petch';font-weight:700;color:var(--gate);font-size:13px}
+  .rk.ok{color:var(--new)}
+
+  /* rulings */
+  .rulegrid{display:flex;flex-wrap:wrap;gap:10px}
+  .rule{flex:1 1 calc(33.3% - 7px);min-width:270px;border:1px solid rgba(240,112,112,.3);border-radius:10px;padding:10px 12px;background:rgba(240,112,112,.04)}
+  .rule .rid{font-family:'Chakra Petch';font-size:10px;letter-spacing:.1em;color:var(--gate);font-weight:700}
+  .rule .rq{font-size:11.5px;color:var(--ink);margin-top:4px;line-height:1.5;font-weight:500}
+  .rule .rb{font-size:10px;color:var(--muted);margin-top:5px;line-height:1.5}
+
+  /* status strip */
+  .stats{display:flex;flex-wrap:wrap;gap:10px}
+  .stat{flex:1 1 calc(16.6% - 9px);min-width:150px;border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:rgba(255,255,255,.02)}
+  .stat .sv{font-family:'Chakra Petch';font-size:19px;font-weight:700;color:var(--ink);line-height:1.1}
+  .stat .sl{font-size:10px;color:var(--muted);margin-top:5px;line-height:1.45}
+  .stat.bad .sv{color:var(--gate)}
+  .stat.warn .sv{color:var(--interim)}
+  .stat.good .sv{color:var(--new)}
+
+  .foot{margin-top:8px;font-size:10px;color:var(--dim);letter-spacing:.06em;text-align:center;line-height:1.8}
+
+  /* two-site layout */
+  .sites{display:flex;gap:0;align-items:stretch;flex-wrap:wrap}
+  .site{flex:1 1 380px;min-width:340px;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:rgba(255,255,255,.015)}
+  .site.office{border-color:rgba(240,177,92,.3)}
+  .site.home{border-color:rgba(111,211,231,.3)}
+  .site-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:9px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .site-head .sn{font-family:'Chakra Petch';font-size:12.5px;font-weight:700;letter-spacing:.1em}
+  .site.office .sn{color:var(--tower)} .site.home .sn{color:var(--core)}
+  .site-head .sm{font-family:'IBM Plex Mono';font-size:9.5px;color:var(--dim)}
+  .site .rack{gap:10px}
+  .site .device{flex:1 1 calc(50% - 5px);min-width:150px}
+  .tunnel-col{flex:0 0 132px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 6px}
+  .tunnel-pipe{width:100%;height:3px;background:repeating-linear-gradient(90deg,var(--gate) 0 7px,transparent 7px 14px)}
+  .tunnel-badge{font-family:'Chakra Petch';font-size:9.5px;letter-spacing:.06em;color:var(--gate);text-align:center;
+    border:1px solid rgba(240,112,112,.45);border-radius:8px;padding:7px 8px;background:rgba(240,112,112,.07);margin:9px 0;line-height:1.4}
+  .tunnel-note{font-size:9px;color:var(--dim);text-align:center;font-family:'IBM Plex Mono';line-height:1.5}
+  @media (max-width:900px){.tunnel-col{flex:1 1 100%;padding:12px 0}.tunnel-pipe{height:3px}}
+</style></head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="brand">MLG <em>//</em> {TITLE} <em>·</em> v{N}</div>
+  <div class="sub">BAN-145 &middot; Majors Law Group, P.C. &middot; {DATE} &middot; supersedes {PRIOR}</div>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--vault)"></span>{LABEL}</span>
+    <span><span class="sw" style="background:var(--new)"></span>New since last version</span>
+    <span><span class="sw" style="background:var(--interim)"></span>Transitional / unconfirmed</span>
+    <span><span class="sw" style="background:var(--gate)"></span>Human gate or open ruling</span>
+  </div>
+</header>
+
+<!-- ============ WHAT CHANGED — write this LAST ============ -->
+<div class="delta">
+  <div class="dt">WHAT CHANGED SINCE v{N-1}</div>
+  <ul>
+    <li><b>Lead clause.</b> Supporting detail, one sentence.</li>
+  </ul>
+</div>
+
+<!-- ============ MEASURED STATE ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>OPERATING STATE &mdash; AS MEASURED {DATE}</div>
+  <div class="zone-note">One sentence naming the binding constraint.</div>
+  <div class="stats">
+    <div class="stat good"><div class="sv">VALUE</div><div class="sl">What it measures</div></div>
+    <div class="stat bad"><div class="sv">0 / 7</div><div class="sl">What it measures</div></div>
+  </div>
+</div>
+
+<!-- ============ CONTENT ZONE — repeat per §3 or §4 of SKILL.md ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/></svg>ZONE TITLE</div>
+  <div class="zone-note">Framing sentence. Where a decision reverses a directive, quote the directive here.</div>
+
+  <!-- machines -->
+  <div class="rack">
+    <div class="device"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/></svg>
+      <div class="name">NAME</div><div class="role">Role fragment</div><div class="spec">ANNOTATION</div></div>
+  </div>
+
+  <!-- two sites, one link -->
+  <div class="sites">
+    <div class="site office"><div class="site-head"><span class="sn">SITE A</span><span class="sm">note</span></div>
+      <div class="rack"><!-- devices --></div></div>
+    <div class="tunnel-col">
+      <div class="tunnel-pipe"></div>
+      <div class="tunnel-badge">LINK<br>TYPE</div>
+      <div class="tunnel-pipe"></div>
+      <div class="tunnel-note">what it costs</div>
+    </div>
+    <div class="site home"><div class="site-head"><span class="sn">SITE B</span><span class="sm">note</span></div>
+      <div class="rack"><!-- devices --></div></div>
+  </div>
+
+  <!-- services -->
+  <div class="cloudgrid">
+    <div class="cloud spine"><div class="ct"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>NAME</div>
+      <div class="cd">What it does. What it costs when it fails.</div></div>
+  </div>
+
+  <!-- reasoning callouts — prose, full sentences -->
+  <div class="vlan-wrap">
+    <div class="vlan good"><div class="vt">HEADING</div><div class="vd">Prose. One bold operative clause.</div></div>
+    <div class="vlan blocked"><div class="vt">HEADING</div><div class="vd">Prose naming the failure mode.</div></div>
+  </div>
+</div>
+
+<!-- ============ AGENT RINGS ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>IDENTITIES</div>
+  <div class="rings">
+    <div class="ring r1">
+      <div class="ring-head"><span class="rn">RING NAME</span><span class="rc">count · scope</span></div>
+      <div class="ring-sub">What this ring is and what it may not do.</div>
+      <div class="agent"><span class="an"><span>01</span>Agent Name</span><span class="ax t2">SONNET 5</span></div>
+      <div class="agent dim"><span class="an"><span>02</span>Retire-recommended</span><span class="ax tn">NO TIER</span></div>
+    </div>
+  </div>
+  <div class="valve"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v7"/><circle cx="12" cy="13" r="3"/><path d="M12 16v5"/></svg>
+    <div style="flex:1;min-width:280px"><div class="vt">BOUNDARY NAME</div><div class="vd">What may not cross, and why.</div></div></div>
+</div>
+
+<!-- ============ GATES ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5.5 3.8 9 8 10 4.2-1 8-4.5 8-10V6z"/></svg>THE HUMAN GATES</div>
+  <div class="gate5"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5.5 3.8 9 8 10 4.2-1 8-4.5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+    <div><div class="gt">GATE 5 &mdash; THE ATTORNEY</div><div class="gd">Nothing files, sends to a client, or finalizes without this signature.</div></div></div>
+</div>
+
+<!-- ============ RANKED TABLE ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9"/></svg>FAILURE DOMAINS</div>
+  <div class="zone-note">State plainly whether this zone is specification or observation.</div>
+  <table>
+    <thead><tr><th style="width:44px">Rank</th><th style="width:190px">Dependency</th><th>Impact</th><th style="width:290px">Mitigated?</th></tr></thead>
+    <tbody><tr><td class="rk">1</td><td><b>Name</b></td><td>Impact.</td><td>Mitigation, or None specified.</td></tr></tbody>
+  </table>
+</div>
+
+<!-- ============ OPEN RULINGS ============ -->
+<div class="zone">
+  <div class="zone-title"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7h14"/></svg>OPEN RULINGS THAT MOVE THIS MAP</div>
+  <div class="zone-note">Only the ones whose answer redraws a box above.</div>
+  <div class="rulegrid">
+    <div class="rule"><div class="rid">ID</div><div class="rq">The question.</div><div class="rb">Why it matters and what it blocks.</div></div>
+  </div>
+</div>
+
+<div class="foot">
+  {TITLE} v{N} &middot; BAN-145 &middot; RECONCILED AGAINST {SOURCES}<br>
+  {DATE} &middot; SUPERSEDES {PRIOR} &middot; INTERNAL &mdash; CONFIDENTIAL &middot; NOTHING DELETED, SUPERSEDE AND VERSION
+</div>
+
+</body>
+</html>

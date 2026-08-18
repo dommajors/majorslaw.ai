@@ -1,0 +1,1724 @@
+{
+ "generated": "2026-08-11",
+ "source": "Google Drive \u00b7 \" MLG MASTER 341\" (391 sheet rows \u2192 485 parsed hearing records)",
+ "window": "2025-01-06 through 2026-04-17",
+ "model": {
+  "statutory_window_ch7": [
+   21,
+   40
+  ],
+  "statutory_window_ch13": [
+   21,
+   50
+  ],
+  "fitted_filing_to_341_offset_days": 27,
+  "fitted_range": [
+   24,
+   30
+  ],
+  "accuracy": {
+   "trustee_known_exact_date": 0.87,
+   "prefiling_weekday_in_duty_set": 0.99,
+   "prefiling_date_in_candidate_set": 0.959,
+   "prefiling_within_7_days": 0.969,
+   "prefiling_exact": 0.399,
+   "zoom_id_from_trustee": 0.973,
+   "passcode_from_trustee": 0.936,
+   "slot_in_lattice": 0.826
+  }
+ },
+ "rotation_panels": {
+  "D. Ariz. \u2014 Phoenix | ch7": {
+   "n": 79,
+   "panel": [
+    {
+     "trustee": "Mason",
+     "share": 0.127
+    },
+    {
+     "trustee": "Haley",
+     "share": 0.127
+    },
+    {
+     "trustee": "Weigle",
+     "share": 0.114
+    },
+    {
+     "trustee": "Birdsell",
+     "share": 0.101
+    },
+    {
+     "trustee": "Reaves",
+     "share": 0.089
+    },
+    {
+     "trustee": "Mullen",
+     "share": 0.089
+    },
+    {
+     "trustee": "Goernitz",
+     "share": 0.089
+    },
+    {
+     "trustee": "MacKenzie",
+     "share": 0.076
+    },
+    {
+     "trustee": "Maguire",
+     "share": 0.063
+    },
+    {
+     "trustee": "Hyder",
+     "share": 0.063
+    },
+    {
+     "trustee": "Gaughan",
+     "share": 0.025
+    },
+    {
+     "trustee": "Warfield",
+     "share": 0.025
+    },
+    {
+     "trustee": "Maney",
+     "share": 0.013
+    }
+   ],
+   "duty_weekdays": [
+    "Mon",
+    "Tue"
+   ]
+  },
+  "D. Ariz. \u2014 Phoenix | ch13": {
+   "n": 13,
+   "panel": [
+    {
+     "trustee": "Maney",
+     "share": 0.692
+    },
+    {
+     "trustee": "Brown",
+     "share": 0.308
+    }
+   ],
+   "duty_weekdays": [
+    "Wed"
+   ]
+  },
+  "D. Ariz. \u2014 Prescott/Flagstaff | ch7": {
+   "n": 14,
+   "panel": [
+    {
+     "trustee": "Warfield",
+     "share": 0.643
+    },
+    {
+     "trustee": "Haley",
+     "share": 0.214
+    },
+    {
+     "trustee": "Mullen",
+     "share": 0.143
+    }
+   ],
+   "duty_weekdays": [
+    "Fri",
+    "Mon"
+   ]
+  },
+  "D. Ariz. \u2014 Prescott/Flagstaff | ch13": {
+   "n": 1,
+   "panel": [
+    {
+     "trustee": "Maney",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Wed"
+   ]
+  },
+  "D. Ariz. \u2014 Tucson | ch7": {
+   "n": 53,
+   "panel": [
+    {
+     "trustee": "Kartchner",
+     "share": 0.396
+    },
+    {
+     "trustee": "Mullen",
+     "share": 0.245
+    },
+    {
+     "trustee": "Haley",
+     "share": 0.113
+    },
+    {
+     "trustee": "Mason",
+     "share": 0.094
+    },
+    {
+     "trustee": "Reaves",
+     "share": 0.057
+    },
+    {
+     "trustee": "Hyder",
+     "share": 0.038
+    },
+    {
+     "trustee": "Gaughan",
+     "share": 0.038
+    },
+    {
+     "trustee": "Weigle",
+     "share": 0.019
+    }
+   ],
+   "duty_weekdays": [
+    "Mon",
+    "Tue",
+    "Thu",
+    "Fri"
+   ]
+  },
+  "D. Ariz. \u2014 Tucson | ch13": {
+   "n": 10,
+   "panel": [
+    {
+     "trustee": "Kerns",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Wed"
+   ]
+  },
+  "D. Ariz. \u2014 Yuma | ch7": {
+   "n": 12,
+   "panel": [
+    {
+     "trustee": "Warfield",
+     "share": 0.417
+    },
+    {
+     "trustee": "Smith",
+     "share": 0.333
+    },
+    {
+     "trustee": "Mason",
+     "share": 0.167
+    },
+    {
+     "trustee": "Haley",
+     "share": 0.083
+    }
+   ],
+   "duty_weekdays": [
+    "Mon",
+    "Wed"
+   ]
+  },
+  "D. Ariz. \u2014 Yuma | ch13": {
+   "n": 3,
+   "panel": [
+    {
+     "trustee": "Brown",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Wed"
+   ]
+  },
+  "E.D. Wash. \u2014 Spokane | ch7": {
+   "n": 53,
+   "panel": [
+    {
+     "trustee": "O'Rourke",
+     "share": 0.358
+    },
+    {
+     "trustee": "Munding",
+     "share": 0.358
+    },
+    {
+     "trustee": "Anderton",
+     "share": 0.283
+    }
+   ],
+   "duty_weekdays": [
+    "Tue",
+    "Wed",
+    "Thu"
+   ]
+  },
+  "E.D. Wash. \u2014 Spokane | ch13": {
+   "n": 3,
+   "panel": [
+    {
+     "trustee": "Todd",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Thu"
+   ]
+  },
+  "W.D. Wash. \u2014 Seattle | ch7": {
+   "n": 107,
+   "panel": [
+    {
+     "trustee": "Klein",
+     "share": 0.402
+    },
+    {
+     "trustee": "Brown",
+     "share": 0.243
+    },
+    {
+     "trustee": "Wood",
+     "share": 0.206
+    },
+    {
+     "trustee": "Shoemaker",
+     "share": 0.15
+    }
+   ],
+   "duty_weekdays": [
+    "Mon",
+    "Tue"
+   ]
+  },
+  "W.D. Wash. \u2014 Seattle | ch13": {
+   "n": 17,
+   "panel": [
+    {
+     "trustee": "Wilson-Aguilar",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Mon"
+   ]
+  },
+  "W.D. Wash. \u2014 Tacoma | ch7": {
+   "n": 73,
+   "panel": [
+    {
+     "trustee": "Waldron",
+     "share": 0.452
+    },
+    {
+     "trustee": "Ellis",
+     "share": 0.274
+    },
+    {
+     "trustee": "Krattli",
+     "share": 0.233
+    },
+    {
+     "trustee": "Garrett",
+     "share": 0.041
+    }
+   ],
+   "duty_weekdays": [
+    "Tue"
+   ]
+  },
+  "W.D. Wash. \u2014 Tacoma | ch13": {
+   "n": 9,
+   "panel": [
+    {
+     "trustee": "Malaier",
+     "share": 1.0
+    }
+   ],
+   "duty_weekdays": [
+    "Thu"
+   ]
+  }
+ },
+ "trustee_profiles": [
+  {
+   "trustee": "Mason",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.625,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "11:30 AM",
+    "12:00 PM",
+    "1:00 PM",
+    "1:30 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 22,
+   "avg_cases_per_session": 1.4,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7571067496",
+   "zoom_passcode": "3403668045",
+   "observations": 11,
+   "sessions": 8,
+   "first_seen": "2025-01-06",
+   "last_seen": "2026-03-24",
+   "continuance_rate": 0.091
+  },
+  {
+   "trustee": "Maney",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "13",
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "10:00 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "12:00 PM"
+   ],
+   "median_session_gap_days": 10,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "3326179131",
+   "zoom_passcode": "8018903784",
+   "observations": 10,
+   "sessions": 10,
+   "first_seen": "2025-01-22",
+   "last_seen": "2026-03-11",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Haley",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:00 AM",
+    "10:30 AM",
+    "12:00 PM",
+    "2:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 1.4,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9061237055",
+   "zoom_passcode": "0641314055",
+   "observations": 10,
+   "sessions": 7,
+   "first_seen": "2025-01-13",
+   "last_seen": "2026-04-13",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Goernitz",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue"
+   ],
+   "weekday_confidence": 0.667,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "3:30 PM",
+    "4:00 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 1.7,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9511317503",
+   "zoom_passcode": "9875192566",
+   "observations": 10,
+   "sessions": 6,
+   "first_seen": "2025-02-24",
+   "last_seen": "2026-03-30",
+   "continuance_rate": 0.3
+  },
+  {
+   "trustee": "Weigle",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "1:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 31,
+   "avg_cases_per_session": 3.0,
+   "max_cases_per_session": 5,
+   "platform": "Zoom",
+   "zoom_meeting_id": "8825916266",
+   "zoom_passcode": "8120205568",
+   "observations": 9,
+   "sessions": 3,
+   "first_seen": "2026-01-26",
+   "last_seen": "2026-03-30",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Birdsell",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue"
+   ],
+   "weekday_confidence": 0.8,
+   "slot_lattice": [
+    "9:00 AM",
+    "11:30 AM",
+    "1:00 PM",
+    "1:30 PM",
+    "2:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 49,
+   "avg_cases_per_session": 1.6,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7197460394",
+   "zoom_passcode": "9510604032",
+   "observations": 8,
+   "sessions": 5,
+   "first_seen": "2025-02-03",
+   "last_seen": "2026-04-06",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Reaves",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "1:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 49,
+   "avg_cases_per_session": 1.8,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9612930787",
+   "zoom_passcode": "8078544704",
+   "observations": 7,
+   "sessions": 4,
+   "first_seen": "2025-04-14",
+   "last_seen": "2026-03-23",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Mullen",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.571,
+   "slot_lattice": [
+    "9:00 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "11:30 AM",
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 22,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5945712629",
+   "zoom_passcode": "9522364765",
+   "observations": 7,
+   "sessions": 7,
+   "first_seen": "2025-01-21",
+   "last_seen": "2026-03-31",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "MacKenzie",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.6,
+   "slot_lattice": [
+    "10:00 AM",
+    "11:00 AM",
+    "11:30 AM",
+    "12:00 PM",
+    "3:00 PM",
+    "4:00 PM"
+   ],
+   "median_session_gap_days": 27,
+   "avg_cases_per_session": 1.4,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "8147707084",
+   "zoom_passcode": "484082455",
+   "observations": 7,
+   "sessions": 5,
+   "first_seen": "2025-03-18",
+   "last_seen": "2026-04-06",
+   "continuance_rate": 0.143
+  },
+  {
+   "trustee": "Hyder",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Fri"
+   ],
+   "weekday_confidence": 0.667,
+   "slot_lattice": [
+    "11:30 AM",
+    "1:30 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 47,
+   "avg_cases_per_session": 2.0,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6056445694",
+   "zoom_passcode": "5532359324",
+   "observations": 6,
+   "sessions": 3,
+   "first_seen": "2026-01-09",
+   "last_seen": "2026-04-13",
+   "continuance_rate": 0.167
+  },
+  {
+   "trustee": "Brown",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "12:00 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 1.2,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6412155816",
+   "zoom_passcode": "595100545",
+   "observations": 6,
+   "sessions": 5,
+   "first_seen": "2025-01-15",
+   "last_seen": "2026-02-11",
+   "continuance_rate": 0.333
+  },
+  {
+   "trustee": "Maguire",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.6,
+   "slot_lattice": [
+    "10:00 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 22,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6610884237",
+   "zoom_passcode": "9917587882",
+   "observations": 5,
+   "sessions": 5,
+   "first_seen": "2026-01-20",
+   "last_seen": "2026-04-07",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Gaughan",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Thu",
+    "Mon"
+   ],
+   "weekday_confidence": 0.667,
+   "slot_lattice": [
+    "8:30 AM",
+    "11:00 AM",
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 74,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "8468864619",
+   "zoom_passcode": "2235330189",
+   "observations": 3,
+   "sessions": 3,
+   "first_seen": "2025-01-16",
+   "last_seen": "2026-01-22",
+   "continuance_rate": 0.333
+  },
+  {
+   "trustee": "Warfield",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Phoenix",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "11:00 AM",
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 7,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5765791205",
+   "zoom_passcode": "3669585951",
+   "observations": 2,
+   "sessions": 2,
+   "first_seen": "2025-04-21",
+   "last_seen": "2025-04-28",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Warfield",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Prescott/Flagstaff",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Fri",
+    "Mon"
+   ],
+   "weekday_confidence": 0.6,
+   "slot_lattice": [
+    "8:30 AM",
+    "12:00 PM",
+    "12:30 PM",
+    "1:00 PM",
+    "1:30 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 11,
+   "avg_cases_per_session": 1.1,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5765791205",
+   "zoom_passcode": "3669585951",
+   "observations": 11,
+   "sessions": 10,
+   "first_seen": "2025-01-17",
+   "last_seen": "2025-05-19",
+   "continuance_rate": 0.182
+  },
+  {
+   "trustee": "Haley",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Prescott/Flagstaff",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Fri"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "1:00 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 25,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9061237055",
+   "zoom_passcode": "0641314055",
+   "observations": 3,
+   "sessions": 2,
+   "first_seen": "2026-01-05",
+   "last_seen": "2026-01-30",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Mullen",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Prescott/Flagstaff",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Fri"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "12:00 PM",
+    "12:30 PM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 2.0,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5945712629",
+   "zoom_passcode": "9522364765",
+   "observations": 2,
+   "sessions": 1,
+   "first_seen": "2026-01-09",
+   "last_seen": "2026-01-09",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Maney",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Prescott/Flagstaff",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "11:30 AM",
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "3326179131",
+   "zoom_passcode": "8018903784",
+   "observations": 2,
+   "sessions": 2,
+   "first_seen": "2025-04-16",
+   "last_seen": "2025-04-30",
+   "continuance_rate": 0.5
+  },
+  {
+   "trustee": "Kartchner",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue",
+    "Thu"
+   ],
+   "weekday_confidence": 0.429,
+   "slot_lattice": [
+    "9:00 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "11:30 AM",
+    "12:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 13,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "4232689099",
+   "zoom_passcode": "5677104616",
+   "observations": 21,
+   "sessions": 14,
+   "first_seen": "2025-01-13",
+   "last_seen": "2026-04-07",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Mullen",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Fri",
+    "Tue",
+    "Mon",
+    "Thu"
+   ],
+   "weekday_confidence": 0.333,
+   "slot_lattice": [
+    "9:00 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "11:30 AM"
+   ],
+   "median_session_gap_days": 39,
+   "avg_cases_per_session": 2.2,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5945712629",
+   "zoom_passcode": "9522364765",
+   "observations": 13,
+   "sessions": 6,
+   "first_seen": "2025-01-27",
+   "last_seen": "2026-04-17",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Kerns",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:30 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "12:30 PM",
+    "1:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 1.4,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "3159691870",
+   "zoom_passcode": "5737485002",
+   "observations": 10,
+   "sessions": 7,
+   "first_seen": "2025-01-08",
+   "last_seen": "2026-02-18",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Mason",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Fri",
+    "Thu"
+   ],
+   "weekday_confidence": 0.6,
+   "slot_lattice": [
+    "9:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "12:00 PM"
+   ],
+   "median_session_gap_days": 38,
+   "avg_cases_per_session": 1.2,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7571067496",
+   "zoom_passcode": "3403668045",
+   "observations": 6,
+   "sessions": 5,
+   "first_seen": "2025-02-24",
+   "last_seen": "2026-02-02",
+   "continuance_rate": 0.167
+  },
+  {
+   "trustee": "Haley",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Fri",
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "9:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 34,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9061237055",
+   "zoom_passcode": "0641314055",
+   "observations": 6,
+   "sessions": 4,
+   "first_seen": "2025-02-28",
+   "last_seen": "2026-04-06",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Gaughan",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue",
+    "Thu"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "9:30 AM",
+    "10:00 AM",
+    "12:00 PM"
+   ],
+   "median_session_gap_days": 38,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "8468864619",
+   "zoom_passcode": "2235330189",
+   "observations": 4,
+   "sessions": 4,
+   "first_seen": "2025-01-07",
+   "last_seen": "2026-01-12",
+   "continuance_rate": 0.5
+  },
+  {
+   "trustee": "Hyder",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Fri",
+    "Mon"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "10:30 AM",
+    "1:00 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 10,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6056445694",
+   "zoom_passcode": "5532359324",
+   "observations": 3,
+   "sessions": 2,
+   "first_seen": "2026-03-06",
+   "last_seen": "2026-03-16",
+   "continuance_rate": 0.333
+  },
+  {
+   "trustee": "Reaves",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "10:00 AM",
+    "10:30 AM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9612930787",
+   "zoom_passcode": "8078544704",
+   "observations": 3,
+   "sessions": 2,
+   "first_seen": "2025-01-14",
+   "last_seen": "2026-03-09",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Weigle",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Tucson",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "8825916266",
+   "zoom_passcode": "8120205568",
+   "observations": 1,
+   "sessions": 1,
+   "first_seen": "2026-01-12",
+   "last_seen": "2026-01-12",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Warfield",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Yuma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue"
+   ],
+   "weekday_confidence": 0.667,
+   "slot_lattice": [
+    "1:30 PM",
+    "2:00 PM",
+    "2:30 PM",
+    "3:00 PM"
+   ],
+   "median_session_gap_days": 20,
+   "avg_cases_per_session": 1.3,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5765791205",
+   "zoom_passcode": "3669585951",
+   "observations": 8,
+   "sessions": 6,
+   "first_seen": "2025-01-21",
+   "last_seen": "2025-04-14",
+   "continuance_rate": 0.375
+  },
+  {
+   "trustee": "Smith",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Yuma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "1:00 PM",
+    "1:30 PM"
+   ],
+   "median_session_gap_days": 63,
+   "avg_cases_per_session": 1.2,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5851190840",
+   "zoom_passcode": "2455896832",
+   "observations": 5,
+   "sessions": 4,
+   "first_seen": "2025-01-08",
+   "last_seen": "2026-01-21",
+   "continuance_rate": 0.2
+  },
+  {
+   "trustee": "Brown",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Yuma",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "1:00 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6412155816",
+   "zoom_passcode": "0595100545",
+   "observations": 3,
+   "sessions": 3,
+   "first_seen": "2025-01-08",
+   "last_seen": "2026-02-18",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Mason",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Yuma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "1:30 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 2.0,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7571067496",
+   "zoom_passcode": "3403668045",
+   "observations": 2,
+   "sessions": 1,
+   "first_seen": "2026-02-23",
+   "last_seen": "2026-02-23",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Haley",
+   "district": "D. Ariz.",
+   "division": "D. Ariz. \u2014 Yuma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "2:00 PM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9061237055",
+   "zoom_passcode": "0641314055",
+   "observations": 1,
+   "sessions": 1,
+   "first_seen": "2026-03-16",
+   "last_seen": "2026-03-16",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Klein",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Seattle",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue"
+   ],
+   "weekday_confidence": 0.5,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:00 AM",
+    "9:30 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "1:30 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 17,
+   "avg_cases_per_session": 4.5,
+   "max_cases_per_session": 10,
+   "platform": "Zoom",
+   "zoom_meeting_id": "5103136544",
+   "zoom_passcode": "8104892393",
+   "observations": 45,
+   "sessions": 10,
+   "first_seen": "2025-01-06",
+   "last_seen": "2026-03-09",
+   "continuance_rate": 0.044
+  },
+  {
+   "trustee": "Brown",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Seattle",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon",
+    "Tue"
+   ],
+   "weekday_confidence": 0.75,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "1:30 PM",
+    "2:30 PM",
+    "3:30 PM"
+   ],
+   "median_session_gap_days": 24,
+   "avg_cases_per_session": 3.4,
+   "max_cases_per_session": 6,
+   "platform": "Zoom",
+   "zoom_meeting_id": "4616096703",
+   "zoom_passcode": "3660254164",
+   "observations": 27,
+   "sessions": 8,
+   "first_seen": "2025-01-21",
+   "last_seen": "2026-03-23",
+   "continuance_rate": 0.037
+  },
+  {
+   "trustee": "Wood",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Seattle",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue",
+    "Mon"
+   ],
+   "weekday_confidence": 0.556,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:00 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "12:00 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 2.8,
+   "max_cases_per_session": 5,
+   "platform": "Zoom",
+   "zoom_meeting_id": "4993520298",
+   "zoom_passcode": "9306556482",
+   "observations": 25,
+   "sessions": 9,
+   "first_seen": "2025-01-13",
+   "last_seen": "2026-03-16",
+   "continuance_rate": 0.12
+  },
+  {
+   "trustee": "Wilson-Aguilar",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Seattle",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:45 AM",
+    "10:00 AM",
+    "11:00 AM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 1.4,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "2846849773",
+   "zoom_passcode": "9420105945",
+   "observations": 18,
+   "sessions": 13,
+   "first_seen": "2025-01-06",
+   "last_seen": "2026-03-23",
+   "continuance_rate": 0.056
+  },
+  {
+   "trustee": "Shoemaker",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Seattle",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Mon"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "12:00 PM",
+    "1:30 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 2.6,
+   "max_cases_per_session": 6,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7481866715",
+   "zoom_passcode": "0136221891",
+   "observations": 18,
+   "sessions": 7,
+   "first_seen": "2025-02-24",
+   "last_seen": "2026-03-02",
+   "continuance_rate": 0.111
+  },
+  {
+   "trustee": "Waldron",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Tacoma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:30 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "12:30 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 3.3,
+   "max_cases_per_session": 6,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6228016616",
+   "zoom_passcode": "6790152908",
+   "observations": 33,
+   "sessions": 10,
+   "first_seen": "2025-01-14",
+   "last_seen": "2026-03-17",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Ellis",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Tacoma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:30 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "12:30 PM",
+    "1:30 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 3.1,
+   "max_cases_per_session": 7,
+   "platform": "Zoom",
+   "zoom_meeting_id": "9326138383",
+   "zoom_passcode": "2465076618",
+   "observations": 22,
+   "sessions": 7,
+   "first_seen": "2025-01-21",
+   "last_seen": "2026-02-24",
+   "continuance_rate": 0.091
+  },
+  {
+   "trustee": "Krattli",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Tacoma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "8:30 AM",
+    "9:30 AM",
+    "10:30 AM",
+    "11:30 AM",
+    "12:30 PM",
+    "2:30 PM",
+    "3:30 PM"
+   ],
+   "median_session_gap_days": 28,
+   "avg_cases_per_session": 3.2,
+   "max_cases_per_session": 5,
+   "platform": "Zoom",
+   "zoom_meeting_id": "6705849768",
+   "zoom_passcode": "3356389145",
+   "observations": 19,
+   "sessions": 6,
+   "first_seen": "2025-01-07",
+   "last_seen": "2026-03-10",
+   "continuance_rate": 0.105
+  },
+  {
+   "trustee": "Malaier",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Tacoma",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Thu"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM"
+   ],
+   "median_session_gap_days": 10,
+   "avg_cases_per_session": 1.2,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "2582865505",
+   "zoom_passcode": "1190124488",
+   "observations": 10,
+   "sessions": 8,
+   "first_seen": "2025-01-16",
+   "last_seen": "2026-02-26",
+   "continuance_rate": 0.1
+  },
+  {
+   "trustee": "Garrett",
+   "district": "W.D. Wash.",
+   "division": "W.D. Wash. \u2014 Tacoma",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "11:00 AM",
+    "1:00 PM",
+    "2:00 PM"
+   ],
+   "median_session_gap_days": 14,
+   "avg_cases_per_session": 1.0,
+   "max_cases_per_session": 1,
+   "platform": "Zoom",
+   "zoom_meeting_id": "7506473314",
+   "zoom_passcode": "9600454165",
+   "observations": 4,
+   "sessions": 4,
+   "first_seen": "2025-03-05",
+   "last_seen": "2026-02-18",
+   "continuance_rate": 0.25
+  },
+  {
+   "trustee": "Munding",
+   "district": "E.D. Wash.",
+   "division": "E.D. Wash. \u2014 Spokane",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Wed"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "1:30 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 2.5,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "4964092084",
+   "zoom_passcode": "7583341970",
+   "observations": 20,
+   "sessions": 8,
+   "first_seen": "2025-01-08",
+   "last_seen": "2026-03-11",
+   "continuance_rate": 0.05
+  },
+  {
+   "trustee": "O'Rourke",
+   "district": "E.D. Wash.",
+   "division": "E.D. Wash. \u2014 Spokane",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Tue"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "2:30 PM"
+   ],
+   "median_session_gap_days": 21,
+   "avg_cases_per_session": 2.7,
+   "max_cases_per_session": 6,
+   "platform": "Zoom",
+   "zoom_meeting_id": "2420782069",
+   "zoom_passcode": "9235455598",
+   "observations": 19,
+   "sessions": 7,
+   "first_seen": "2025-02-25",
+   "last_seen": "2026-03-17",
+   "continuance_rate": 0.0
+  },
+  {
+   "trustee": "Anderton",
+   "district": "E.D. Wash.",
+   "division": "E.D. Wash. \u2014 Spokane",
+   "chapters": [
+    "7"
+   ],
+   "sitting_weekdays": [
+    "Thu"
+   ],
+   "weekday_confidence": 0.909,
+   "slot_lattice": [
+    "9:00 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "1:00 PM",
+    "2:30 PM",
+    "3:00 PM"
+   ],
+   "median_session_gap_days": 19,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 3,
+   "platform": "Zoom",
+   "zoom_meeting_id": "2628631798",
+   "zoom_passcode": "225675373",
+   "observations": 17,
+   "sessions": 11,
+   "first_seen": "2025-01-09",
+   "last_seen": "2026-03-12",
+   "continuance_rate": 0.118
+  },
+  {
+   "trustee": "Todd",
+   "district": "E.D. Wash.",
+   "division": "E.D. Wash. \u2014 Spokane",
+   "chapters": [
+    "13"
+   ],
+   "sitting_weekdays": [
+    "Thu"
+   ],
+   "weekday_confidence": 1.0,
+   "slot_lattice": [
+    "10:00 AM"
+   ],
+   "median_session_gap_days": null,
+   "avg_cases_per_session": 1.5,
+   "max_cases_per_session": 2,
+   "platform": "Zoom",
+   "zoom_meeting_id": "2629802865",
+   "zoom_passcode": "5105703805",
+   "observations": 3,
+   "sessions": 2,
+   "first_seen": "2025-02-20",
+   "last_seen": "2026-03-05",
+   "continuance_rate": 0.0
+  }
+ ]
+}
